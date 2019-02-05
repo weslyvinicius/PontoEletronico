@@ -20,11 +20,9 @@ public class Empresa extends AbstractEntity {
     @Column(name = "cnpj", nullable = false)
     private String cnpj;
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_criacao", nullable = false)
     private LocalDateTime dataCriacao;
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_atualizacao", nullable = false)
     private LocalDateTime dataAtualizacao;
 

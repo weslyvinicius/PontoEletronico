@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 @Entity
 public class Lancamento extends AbstractEntity{
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data", nullable = false)
     private LocalDateTime data;
 
@@ -22,11 +21,9 @@ public class Lancamento extends AbstractEntity{
     @Column(name = "localizacao")
     private String localizacao;
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_criacao", nullable = false)
     private LocalDateTime dataCriacao;
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_atualizacao", nullable = false)
     private LocalDateTime dataAtualizacao;
 

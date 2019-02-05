@@ -51,12 +51,10 @@ public class Funcionario extends AbstractEntity{
     private PerfilEnum perfil;
 
     @Getter @Setter
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_criacao", nullable = false)
     private LocalDateTime dataCriacao;
 
     @Getter @Setter
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_atualizacao", nullable = false)
     private LocalDateTime dataAtualizacao;
 
